@@ -5,7 +5,7 @@ client.connect()
 const getAllFruits = async () => {
   try {
     await client.connect();
-    const allFruits = await collection.find().toArray();
+    const allFruits = await fruitsCollection.find().toArray();
     console.log(allFruits);
   } catch (error) {
     console.log(error);

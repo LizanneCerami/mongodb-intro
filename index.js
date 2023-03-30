@@ -35,16 +35,16 @@ import { client } from "./mongoConnect.js";
 
 // //editFruit()
 
-const getAllFruits = async () => {
-  try {
-    await client.connect();
-    const allFruits = await collection.find().toArray();
-    console.log(allFruits);
-  } catch (error) {
-    console.log(error);
-  } finally {
-    await client.close();
-  }
+// const getAllFruits = async () => {
+//   try {
+//     await client.connect();
+//     const allFruits = await collection.find().toArray();
+//     console.log(allFruits);
+//   } catch (error) {
+//     console.log(error);
+//   } finally {
+//     await client.close();
+//   }
 
   // *** using  .then .catch
   // collection
@@ -52,23 +52,23 @@ const getAllFruits = async () => {
   //   .toArray()
   //   .then((items) => console.log(items))
   //   .catch((err) => confirm.length(err));
-};
+//};
 
-getAllFruits();
+//getAllFruits();
 
 
-const deleteFruits = async () => {
+// const deleteFruits = async () => {
 
-  try {
-  await client.connect()
-  const itemDeleted = await collection.deleteOne({ name: "Grape" });
-  console.log(itemDeleted);
-  } catch (error) {
-    console.log(error)
-  } finally {
-    await client.close()
-  }
+//   try {
+//   await client.connect()
+//   const itemDeleted = await collection.deleteOne({ name: "Grape" });
+//   console.log(itemDeleted);
+//   } catch (error) {
+//     console.log(error)
+//   } finally {
+//     await client.close()
+//   }
 
-};
+// };
 
-deleteFruits();
+// deleteFruits();
