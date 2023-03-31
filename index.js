@@ -33,7 +33,7 @@ import { client } from "./mongoConnect.js";
 //   console.log(updatedFruit);
 // };
 
-// //editFruit()
+// editFruit()
 
 // const getAllFruits = async () => {
 //   try {
@@ -54,7 +54,7 @@ import { client } from "./mongoConnect.js";
   //   .catch((err) => confirm.length(err));
 //};
 
-//getAllFruits();
+// getAllFruits();
 
 
 // const deleteFruits = async () => {

@@ -6,11 +6,11 @@ const addToy = async () => {
   // get collection
 
   const myToy = {
-    name: 'Optimus Prime',
-    type: 'Transformer',
+    name: 'Phase 10',
+    type: 'Card game',
     cool: true,
-    price: 40,
-    description: 'Lead Autobot, awesome guy',
+    price: 10,
+    description: "a strategic card game, similar to rummyg"
   }
 
   const addedToy = await toysCollection.insertOne(myToy)
